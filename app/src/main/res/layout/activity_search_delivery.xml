@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.OtherAti.MainActivity"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:text="택배사를 선택해주세요."
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:rowCount="3"
+            android:layout_marginBottom="10dp"
+            >
+
+
+            <Button
+                android:id="@+id/post"
+                android:text="우체국"
+                android:textColor="@color/mint"
+                android:background="@drawable/style_btn_delivery"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+            <Button
+                android:id="@+id/cj"
+                android:text="cj대한통운"
+                android:textColor="@color/mint"
+                android:background="@drawable/style_btn_delivery"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+            <Button
+                android:id="@+id/hanjin"
+                android:text="한진택배"
+                android:textColor="@color/mint"
+                android:background="@drawable/style_btn_delivery"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+
+
+        </GridLayout>
+
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/style_editttext_grid"
+            android:columnCount="1"
+            android:orientation="horizontal">
+
+
+
+
+
+            <EditText
+                android:id="@+id/invoiceNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".75"
+                android:hint="송장번호"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/messageText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:hint="리스트에 남길 말(추후버젼 추가)" />
+
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+                android:textStyle="bold"
+                android:text="택배회사"
+
+                />
+
+
+            <TextView
+                android:id="@+id/company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text=""
+                />
+
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/invoiceBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/style_btn_delivery"
+            android:text="조회하기"
+            android:textColor="@color/mint"
+            android:textStyle="bold"
+
+            />
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
